@@ -1,0 +1,50 @@
+<template>
+        <!-- class="slds-table slds-table_cell-buffer slds-table_bordered slds-m-around_xxx-small" -->
+        <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-m-around_xxx-small">
+            <caption>OutStanding Contacts</caption>
+            <thead>
+                <tr>
+                    <th class="TableHeader" scope="col">
+                        <div class="slds-truncate" title="Name">Name</div>
+                    </th>
+                    <th class="TableHeader" scope="col">
+                        <div class="slds-truncate" title="First Name">First Name</div>
+                    </th>
+                    <th class="TableHeader" scope="col">
+                        <div class="slds-truncate" title="Last Name">Last Name</div>
+                    </th>
+                    <!-- <th class="TableHeader" scope="col">
+                        <div class="slds-truncate" title="Phone">Phone</div>
+                    </th> -->
+                    <th class="TableHeader" scope="col">
+                        <div class="slds-truncate" title="Email">Email</div>
+                    </th>
+                </tr>
+            </thead>
+                <tbody>
+                <template for:each={data} for:item="con">
+                                <tr key={con.Id} class="slds-card">
+                                    <td scope="col">
+                                        <div class="BlueText">{con.Name}</div>
+                                    </td>
+                                    <td scope="col" class="border-td">
+                                        <div>{con.FirstName}</div>
+                                    </td >
+                                    <td scope="col" class="border-td">
+                                        <div class="BlueText">{con.LastName}</div>
+                                    </td>
+                                    <!-- <td scope="col" class="border-td">
+                                        <div>
+                                            <lightning-formatted-phone value={con.Phone}></lightning-formatted-phone>
+                                        </div>
+                                    </td> -->
+                                    <td scope="col">
+                                        <div class="BlueText">
+                                            <lightning-formatted-email value={con.Email}></lightning-formatted-email>
+                                        </div>
+                                    </td>
+                                </tr>
+                </template>
+                </tbody>
+            </table>
+    </template>

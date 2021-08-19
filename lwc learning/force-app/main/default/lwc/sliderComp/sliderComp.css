@@ -1,0 +1,40 @@
+.bgc{
+    background-color: #F3F3F3;
+}
+.announcement{
+    color: hsl(281, 51%, 46%);
+    font-size: 20px;
+    font-weight: bold;
+}
+.chleft{
+    margin-top: 50%;
+    margin-left: 0px;
+}
+.chright{
+    margin-top: 50%;
+    margin-left: 90%;
+}
+.mar{
+    margin-left: 30px;
+    margin-top: 25px;
+}
+.textclass{
+    margin-left: 20px;
+}
+.textone {
+    font-size: 20px;
+    margin: 20px 20px 5px 60px;
+    font-weight: bold;
+}
+.texttwo{
+    margin-bottom: 5px;
+    padding-left: 28px;
+    font-size: 14px;
+}
+.textthree{
+    font-weight: 300;
+    margin-top: 5px;
+    margin-left: 61px;
+    color: #7B7B7B;
+    margin-bottom: 40px;
+}

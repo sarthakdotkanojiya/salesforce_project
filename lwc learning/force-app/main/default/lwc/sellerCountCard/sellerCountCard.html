@@ -1,0 +1,22 @@
+<template>
+    <div class="slds-grid slds-gutters countSellerComponent">
+        <div class="slds-col tile">
+            <template if:true={count.data}>
+                <strong>{count.data}</strong><br> 
+                <p><lightning-icon icon-name="utility:standard_objects" alternative-text="standard_objects" title="standard_objects"></lightning-icon>Projects</p>
+            </template>
+        </div>
+        <div class="slds-col tile secondTile">
+            <template if:true={count.data}>
+                <strong >5</strong><br>
+                <p><lightning-icon icon-name="utility:standard_objects" alternative-text="picklist_type" title="picklist_type"></lightning-icon>Pending Invoices</p>
+            </template>
+        </div>
+        <div class="slds-col tile thirdTile">
+            <template if:true={count.data}>
+                <strong>2</strong><br>
+                <p><lightning-icon icon-name="utility:standard_objects" alternative-text="gpres" title="gpres"></lightning-icon>Documents</p>
+            </template>
+        </div>
+    </div>
+</template>
